@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Conseil_accoucher_Activity"
+    android:background="@drawable/roses_background">
+    <ImageView
+        android:id="@+id/delete_accoucher"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:layout_gravity="end"
+        android:background="@color/rose"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/conseil_head"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/pink"
+                    android:paddingStart="20dp"
+                    android:text="@string/voie_basse"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@android:drawable/ic_menu_info_details" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:layout_marginEnd="10dp">
+                    <TableRow>
+                        <TextView android:text="@string/avantages" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="20sp"/>
+                        <TextView android:text="@string/inconvenients" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="20sp"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/basse_a1" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                        <TextView android:text="@string/basse_i1" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/basse_a2" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                        <TextView android:text="@string/basse_i2" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/basse_a3" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                        <TextView android:text="@string/basse_i3" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/pink"
+                    android:paddingStart="20dp"
+                    android:text="@string/cesarienne"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@android:drawable/ic_menu_info_details" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp">
+                    <TableRow>
+                        <TextView android:text="@string/avantages" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="20sp"/>
+                        <TextView android:text="@string/inconvenients" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="20sp"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/ces_a1" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                        <TextView android:text="@string/ces_i1" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/ces_a2" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                        <TextView android:text="@string/ces_i2" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/ces_a3" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                        <TextView android:text="@string/ces_i3" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
